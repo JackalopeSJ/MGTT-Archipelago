@@ -65,8 +65,6 @@ warning in the MGTT client when the slot authenticates.
   Shot. One putter range is precollected in shuffled seeds.
 - Putting Practice plus separate Novice, Intermediate, and Expert difficulty
   items. Practice checks require the matching received access items.
-- Optional Topspin, Backspin, Super Topspin, and Super Backspin items, either
-  globally or separately for each of the 16 golfers.
 - Checks for each tournament, every 1P Ring Attack level, Pro-difficulty wins
   against all 16 native Character Match opponents, Character Match wins on all
   six courses, requested shot/round feats, optional
