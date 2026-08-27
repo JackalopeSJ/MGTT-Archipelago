@@ -1,0 +1,65 @@
+description: Recommended settings for Mario Golf Toadstool Tour Archipelago 1.0
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+
+  # Four random native golfers start available. The first progressive copy
+  # unlocks the base golfer; the second unlocks that golfer's Star form.
+  starting_characters: 4
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  # Recommended start: one random wood, iron, and wedge for every golfer,
+  # plus the always-available putter. Use per_character for the harder
+  # one-random-club-per-golfer variant.
+  shuffle_clubs: per_character_balanced
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: true
+  advance_tour_golfer_stats: standard
+
+  # One physical course starts owned. Course items apply to Tournament, Star
+  # Tournament, Stroke Play, Speed Golf, and Character Match. Ring Attack
+  # follows its normal sequential course progression.
+  shuffle_tournaments: true
+  starting_tournaments: 1
+
+  # Three modes start available, always including Tournament or Ring Attack.
+  shuffle_modes: true
+  starting_modes: 3
+
+  # Tournament and Stroke Play begin at six and can receive three upgrades.
+  shuffle_power_shots: true
+  starting_power_shot_capacity: 6
+
+  # Each golfer starts with one random putting length and can receive the
+  # other two. Approach Shot is one global item in 1.0.
+  shuffle_short_game: true
+  putter_range_scope: per_character
+  shuffle_putting_practice_difficulties: true
+  spin_unlocks: vanilla
+
+  tournament_character_checks: true
+  character_match_course_checks: false
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: one_and_two_player
+  individual_best_badge_checks: true
+
+  # Optional packages are off in the recommended release profile. They can be
+  # enabled individually after reading KNOWN_ISSUES.md.
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+
+  # Choices: all_tournaments, all_pro_character_matches,
+  # all_single_player_ring_shots, or all_three.
+  goal: all_tournaments

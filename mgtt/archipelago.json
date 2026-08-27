@@ -1,0 +1,7 @@
+{
+  "game": "Mario Golf: Toadstool Tour",
+  "authors": ["MGTT Archipelago Team"],
+  "world_version": "0.99.0",
+  "build_version": "1.0.0-rc1",
+  "minimum_ap_version": "0.6.7"
+}

@@ -1,0 +1,45 @@
+description: MGTT profile with clubs and putter lengths shuffled separately for every golfer
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+  starting_characters: 4
+  shuffle_characters: true
+  shuffle_star_characters: true
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: true
+  advance_tour_golfer_stats: standard
+  shuffle_tournaments: true
+  starting_tournaments: 1
+  shuffle_modes: true
+  starting_modes: 3
+  shuffle_power_shots: true
+  # Applies only to Tournament, Star Tournament, and Stroke Play (1-9).
+  starting_power_shot_capacity: 6
+  shuffle_short_game: true
+  # Each of the 18 golfers starts with one random length. Their other two
+  # lengths are independent Archipelago items, adding 36 items to the pool.
+  putter_range_scope: per_character
+  shuffle_putting_practice_difficulties: true
+  # Keeping spins global leaves enough active locations for the larger putter
+  # pool. Per-character clubs + spins + putters cannot all fit simultaneously
+  # in the current 1.0 location catalog.
+  spin_unlocks: global
+  tournament_character_checks: true
+  character_match_course_checks: true
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: all_player_counts
+  individual_best_badge_checks: true
+  coin_shoot_checks: true
+  speed_golf_checks: true
+  practice_challenge_checks: true
+  congo_canopy_score_checks: true
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+  goal: all_tournaments

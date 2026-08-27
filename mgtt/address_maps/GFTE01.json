@@ -1,0 +1,7 @@
+{
+  "game_id": "GFTE01",
+  "revision": "NTSC-U (USA retail dump, SHA-256 08a1f0c1f7336418fa814a19907f2094d81062d5e7636ab096a43c41132410f0)",
+  "protocol_base": "0x802D6800",
+  "verified": true,
+  "notes": "Revision-locked protocol map. The replacement hook at 0x80128000 is boot-verified in Dolphin 2603a for protocol-v2 initialization and frame execution. Client synchronization covers progressive golfer/Star presentation, twelve independent Tournament permissions, standard clubs, putter/Approach state, spin permissions, and Power Shot capacity. 0.9.25 removes the unsafe desktop write to 0x80445FE8, while the matching ISO hook safely reads that native branch flag synchronously at course confirmation to distinguish Tournament from Star Tournament independently of golfer form. Serialized native popups are restored; impossible bulk persistent-check bursts are quarantined before server submission and disable popups only for the affected connection. It retains the reversible row-31 Star Tournament presentation probe, initial roster/Star grid fix, late retail six-shot repair for Stroke Play, and Ring Attack terminology."
+}

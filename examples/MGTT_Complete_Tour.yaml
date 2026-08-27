@@ -1,0 +1,48 @@
+description: Complete supported MGTT experience with every 1.0 item and location category
+name: Complete Tour
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+
+  starting_characters: 1
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: true
+  shuffle_advance_tour_golfers: true
+  advance_tour_golfer_stats: random
+
+  shuffle_tournaments: true
+  starting_tournaments: 1
+  shuffle_modes: true
+  starting_modes: 3
+
+  shuffle_power_shots: true
+  # Applies only to Tournament, Star Tournament, and Stroke Play (1-9).
+  starting_power_shot_capacity: 1
+  shuffle_short_game: true
+  # Per-character clubs and spins already create a very large pool. The
+  # separate per-character-putter example covers that alternate configuration.
+  putter_range_scope: global
+  shuffle_putting_practice_difficulties: true
+  spin_unlocks: per_character
+
+  tournament_character_checks: true
+  character_match_course_checks: true
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: all_player_counts
+  individual_best_badge_checks: true
+  coin_shoot_checks: true
+  speed_golf_checks: true
+  practice_challenge_checks: true
+  congo_canopy_score_checks: true
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+  goal: all_three

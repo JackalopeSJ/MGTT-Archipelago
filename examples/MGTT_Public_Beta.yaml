@@ -1,0 +1,71 @@
+description: Recommended settings for MGTT Archipelago 1.0
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+
+  # Four random native golfers begin usable. Each progressive item grants the
+  # base golfer first and that golfer's Star form second.
+  starting_characters: 4
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  # Recommended public start: every golfer receives one independently chosen
+  # wood, one iron, and one wedge plus their always-available putter. Change
+  # this to per_character for the harder one-random-club-per-golfer version.
+  shuffle_clubs: per_character_balanced
+  # Custom Advance Tour sets work, but the retail selector may remain hidden
+  # until Neil and Ella exist. Leave these off in the safest first seed.
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: true
+  advance_tour_golfer_stats: standard
+
+  # One physical course starts owned. Each course item opens its regular and
+  # Star Tournament versions and that course in other supported modes.
+  shuffle_tournaments: true
+  starting_tournaments: 1
+
+  # Three modes start available. Tournament or Ring Attack is guaranteed to be
+  # among them so the seed always has an ordinary progression route.
+  shuffle_modes: true
+  starting_modes: 3
+
+  # Place one progressive capacity item per step from this starting value to
+  # nine; this applies only to Tournament and Stroke Play.
+  shuffle_power_shots: true
+  starting_power_shot_capacity: 6
+
+  # Every golfer starts with one random putter range and can receive the other
+  # two ranges plus Approach Shot independently.
+  shuffle_short_game: true
+  putter_range_scope: per_character
+  shuffle_putting_practice_difficulties: true
+
+  # Shuffled spin inputs are not part of the stable 1.0 boundary.
+  spin_unlocks: vanilla
+
+  # These optional location groups are available for experimentation but are
+  # deliberately excluded from the recommended first seed.
+  # Adds one 18-hole Tournament win check for every native golfer. Besides
+  # encouraging roster variety, these locations support the per-character
+  # equipment item pool. Winner attribution is controller-confirmed.
+  tournament_character_checks: true
+  character_match_course_checks: false
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: one_and_two_player
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+
+  # First place in all six regular and all six Star Tournaments.
+  goal: all_tournaments

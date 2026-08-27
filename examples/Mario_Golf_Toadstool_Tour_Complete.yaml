@@ -1,0 +1,69 @@
+# Complete 1.0 development/capture profile.
+#
+# This enables every compatible item and check category currently exposed by
+# the APWorld. Standard clubs are shuffled separately for every native golfer;
+# the expanded location categories provide enough checks for that larger pool.
+
+description: Complete MGTT capture profile with per-character clubs and every check category
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  # Archipelago common options
+  progression_balancing: 50
+  accessibility: items
+
+  # Native golfers: first copy unlocks the base golfer; second unlocks Star.
+  starting_characters: 1
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  # Choices: vanilla, global, per_character, per_character_balanced.
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: true
+  shuffle_advance_tour_golfers: true
+  # Choices: weak (205/200), standard (305/300), overpowered (405/400), random.
+  advance_tour_golfer_stats: standard
+
+  # Tournaments and modes
+  shuffle_tournaments: true
+  starting_tournaments: 1
+  shuffle_modes: true
+  starting_modes: 3
+
+  # Shot and equipment abilities
+  shuffle_power_shots: true
+  # This capture profile deliberately exercises the final-use/zero transition.
+  # Capacity applies only to Tournament, Star Tournament, and Stroke Play.
+  starting_power_shot_capacity: 1
+  shuffle_short_game: true
+  putter_range_scope: global
+  shuffle_putting_practice_difficulties: true
+
+  # Choices: vanilla, global, per_character.
+  spin_unlocks: per_character
+
+  # Optional location groups
+  tournament_character_checks: true
+  character_match_course_checks: true
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: all_player_counts
+  individual_best_badge_checks: true
+  coin_shoot_checks: true
+  speed_golf_checks: true
+  practice_challenge_checks: true
+  congo_canopy_score_checks: true
+  # Applied to the supported Front 9 check. Longer-round IDs are retired.
+  congo_canopy_score_to_par: 0
+  # Applied to the best completed Front 9, Back 9, or All 18 Near-Pin record.
+  near_pin_aggregate_feet: 300
+
+  # Password-dependent Part D checks are deferred until after 1.0.
+  experimental_checks: false
+  native_popup_delivery: client_only
+  # Capture/testing profile: enables /mgtt_debug_item and /mgtt_debug_check.
+  enable_debug_commands: true
+
+  # Choices: all_tournaments, all_pro_character_matches,
+  # all_single_player_ring_shots, all_three.
+  goal: all_three

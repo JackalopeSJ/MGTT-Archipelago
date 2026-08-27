@@ -1,0 +1,58 @@
+description: Default Mario Golf Toadstool Tour Archipelago options
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+  # Random native golfers available at the start (1-16); default is 4.
+  starting_characters: 4
+  shuffle_characters: true
+  shuffle_star_characters: true
+  # Choices: vanilla, global, per_character (default, one random starter), or
+  # per_character_balanced (one random wood, iron, and wedge per golfer).
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: true
+  # Choices: weak (205/200), standard (305/300), overpowered (405/400), random.
+  advance_tour_golfer_stats: standard
+  shuffle_tournaments: true
+  # Random regular courses available at seed start (1-6). A course item opens
+  # that course across the supported regular-course modes.
+  starting_tournaments: 1
+  shuffle_modes: false
+  starting_modes: 3
+  shuffle_power_shots: true
+  # Used when capacity is shuffled (1-9); applies only to Tournament, Star
+  # Tournament, and Stroke Play. Other modes keep their native rules.
+  starting_power_shot_capacity: 6
+  shuffle_short_game: false
+  # Choices: global or per_character. Per-character is the intended default.
+  putter_range_scope: per_character
+  shuffle_putting_practice_difficulties: true
+  spin_unlocks: vanilla
+  tournament_character_checks: false
+  # Keep disabled until the per-course result capture mapping is complete.
+  character_match_course_checks: false
+  # Retail shares these course bits: regular Tournament items also unlock the
+  # corresponding Character Match course. all_courses precollects all six.
+  character_match_course_access: follow_tournament_items
+  # One bundled option for 2P, 3P, and 4P checks. Enabling it guarantees at
+  # least four effective starting golfers.
+  ring_shot_player_counts: one_and_two_player
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  # Relative to par; 0 means par or better and -5 means five under or better.
+  congo_canopy_score_to_par: 0
+  # Total Near-Pin distance, in feet, across the completed Front 9, Back 9,
+  # or All 18 round. Lower is better.
+  near_pin_aggregate_feet: 300
+  experimental_checks: false
+  # Native popups are disabled for 1.0 safety; use client_only.
+  native_popup_delivery: client_only
+  # Dedicated test rooms only; permits permanent item/check cheat commands.
+  enable_debug_commands: false
+  goal: all_tournaments

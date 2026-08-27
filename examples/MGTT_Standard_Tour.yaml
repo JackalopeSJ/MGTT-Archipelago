@@ -1,0 +1,49 @@
+description: Recommended MGTT experience with per-character clubs and a four-golfer start
+name: Standard Tour
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+
+  starting_characters: 4
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: true
+  advance_tour_golfer_stats: standard
+
+  shuffle_tournaments: true
+  starting_tournaments: 1
+  shuffle_modes: false
+  starting_modes: 3
+
+  shuffle_power_shots: true
+  # Applies only to Tournament, Star Tournament, and Stroke Play (1-9).
+  starting_power_shot_capacity: 6
+  shuffle_short_game: false
+  putter_range_scope: per_character
+  shuffle_putting_practice_difficulties: true
+  spin_unlocks: vanilla
+
+  tournament_character_checks: false
+  character_match_course_checks: false
+  character_match_course_access: follow_tournament_items
+  # 1P/2P Ring Attack is the recommended 1.0 setting. The 3P/4P package
+  # remains available as an opt-in testing feature while its extra player bag
+  # presentation is polished.
+  ring_shot_player_counts: one_and_two_player
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+  goal: all_tournaments

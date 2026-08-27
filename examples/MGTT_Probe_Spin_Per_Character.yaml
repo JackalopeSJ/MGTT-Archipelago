@@ -1,0 +1,41 @@
+# Generate this focused controller-test world with generator seed 8675309.
+description: MGTT per-character-spin final-consumer probe
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+  starting_characters: 16
+  shuffle_characters: false
+  shuffle_star_characters: false
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: false
+  advance_tour_golfer_stats: standard
+  shuffle_tournaments: false
+  shuffle_modes: false
+  starting_modes: 1
+  shuffle_power_shots: false
+  shuffle_short_game: false
+  putter_range_scope: global
+  shuffle_putting_practice_difficulties: false
+  spin_unlocks: per_character
+  # Supplies enough checks for the 64 per-character spin items.
+  tournament_character_checks: true
+  character_match_course_checks: false
+  character_match_course_access: all_courses
+  ring_shot_player_counts: all_player_counts
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  # Additional reachable locations keep the large per-character spin pool
+  # valid after unverified Birdie Challenge long-round checks are retired.
+  speed_golf_checks: true
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: true
+  goal: all_tournaments

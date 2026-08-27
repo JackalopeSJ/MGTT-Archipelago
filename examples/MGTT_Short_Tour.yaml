@@ -1,0 +1,49 @@
+description: Shorter MGTT seed with every native base golfer and course available immediately
+name: Short Tour
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+
+  # All native base golfers begin playable; their Star stages remain items.
+  starting_characters: 16
+  shuffle_characters: true
+  shuffle_star_characters: true
+
+  # Per-character clubs remain the central MGTT randomizer experience.
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: false
+  advance_tour_golfer_stats: standard
+
+  # Remove access-item waiting while retaining the individual accomplishments.
+  shuffle_tournaments: false
+  starting_tournaments: 6
+  shuffle_modes: false
+  starting_modes: 3
+
+  shuffle_power_shots: true
+  # Applies only to Tournament, Star Tournament, and Stroke Play (1-9).
+  starting_power_shot_capacity: 6
+  shuffle_short_game: false
+  putter_range_scope: global
+  shuffle_putting_practice_difficulties: false
+  spin_unlocks: vanilla
+
+  tournament_character_checks: false
+  character_match_course_checks: false
+  character_match_course_access: all_courses
+  ring_shot_player_counts: single_player_only
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+  goal: all_single_player_ring_shots

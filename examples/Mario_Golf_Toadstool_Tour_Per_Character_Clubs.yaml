@@ -1,0 +1,38 @@
+description: MGTT with all 13 standard clubs shuffled separately for each native golfer
+name: Player
+game: "Mario Golf: Toadstool Tour"
+
+"Mario Golf: Toadstool Tour":
+  progression_balancing: 50
+  accessibility: items
+  starting_characters: 16
+  shuffle_characters: false
+  shuffle_star_characters: false
+  shuffle_clubs: per_character
+  shuffle_custom_club_sets: false
+  shuffle_advance_tour_golfers: false
+  advance_tour_golfer_stats: standard
+  shuffle_tournaments: true
+  starting_tournaments: 1
+  shuffle_modes: false
+  starting_modes: 3
+  shuffle_power_shots: true
+  shuffle_short_game: false
+  putter_range_scope: global
+  shuffle_putting_practice_difficulties: false
+  spin_unlocks: vanilla
+  tournament_character_checks: true
+  character_match_course_checks: false
+  character_match_course_access: follow_tournament_items
+  ring_shot_player_counts: one_and_two_player
+  individual_best_badge_checks: true
+  coin_shoot_checks: false
+  speed_golf_checks: false
+  practice_challenge_checks: false
+  congo_canopy_score_checks: false
+  congo_canopy_score_to_par: 0
+  near_pin_aggregate_feet: 300
+  experimental_checks: false
+  native_popup_delivery: client_only
+  enable_debug_commands: false
+  goal: all_tournaments
